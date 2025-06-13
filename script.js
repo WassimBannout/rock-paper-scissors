@@ -1,13 +1,16 @@
-/* Function to get a random choice between "rock", "paper" and "scissors" */
+// Function to get a random choice between "rock", "paper" and "scissors" 
 function getComputerChoice() {
     const num = Math.random() * 3;
     return num < 1 ? "rock" : num < 2 ? "paper" : "scissors";
 }
 
+// Function to get choice from the human player
 function getHumanChoice() {
     return prompt("Enter your choice: (\"rock\", \"paper\" or \"scissors\")");
 }
 
+
+// Function that defines the logic of the game
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
